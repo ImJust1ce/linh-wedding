@@ -48,6 +48,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
       type="text/javascript"
@@ -56,6 +57,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js"
       type="text/javascript"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
 
   <body id="top" class="scroll-behavior: smooth;">
@@ -102,7 +104,7 @@
                   letter-spacing: -1px;
                 "
               >
-                <b style="font-size: 1.4em">14:00 THỨ HAI 11. 11. 2024</b>
+                <b style="font-size: 1.4em">16:00 THỨ HAI 11. 11. 2024</b>
                 <br />
                 <!-- <br />Wild Pink 248 Broad Ave, Palisades Park, NJ 07650 -->
               </p>
@@ -142,6 +144,11 @@
                       >Gallery</a
                     >
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" style="font-family: 'Gugi'" href="#gift"
+                      >Gift</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -156,7 +163,7 @@
               Chú rể & Cô dâu
             </h2>
             <div class="row text-center">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-right">
                 <div class="mt-3">
                   <h3
                     class="h2 ww-title"
@@ -170,7 +177,7 @@
                   <img alt="Bride" class="img-fluid" src="images/pic2.jpg" />
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="fade-left">
                 <div class="mt-3">
                   <h3
                     class="h2 ww-title"
@@ -187,7 +194,7 @@
             </div>
           </div>
         </div>
-        <div class="ww-section bg-light" id="events">
+        <div class="ww-section section-event" id="events">
           <div class="container ww-wedding-event">
             <h2
               class="h1 text-center pb-3 ww-title"
@@ -196,41 +203,10 @@
               Trân trọng kính mời!
             </h2>
             <!-- Tiệc nhà trai -->
-            <div class="row invite-card">
+            <div class="row invite-card align-items-center">
               <span class="line"> </span>
               <span class="line"> </span>
-              <div class="col-md-7 col-sm-12">
-                <div class="my-3">
-                  <div class="h4">Tiệc nhà trai</div>
-                  <ul>
-                    <li>
-                      <i class="text-muted fas fa-map-marker-alt"></i>
-                      <span class="pl-2 text-muted"
-                        >Cho xin cái địa chỉ</span
-                      >
-                    </li>
-
-                    <li class="pt-2">
-                      <i class="text-muted far fa-calendar-alt"></i>
-                      <span class="pl-2 text-muted"
-                        >2021. 09. 05. SUN 12:00 PM</span
-                      >
-                    </li>
-                    <br />
-                    <a
-                      href="https://www.google.com/maps/place/wild+pink/@40.8471026,-74.0003605,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f72ec67aa247:0x6d7af0abd2ca2794!8m2!3d40.8470986!4d-73.9981718"
-                    >
-                      <img
-                        alt="google-map"
-                        class="map-icon"
-                        id="google-map"
-                        src="images/map/google-map.png"
-                      />
-                    </a>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-5 col-sm-12">
+              <div class="col-md-5 col-4">
                 <div class="my-3">
                   <img
                     alt="Wedding Party"
@@ -240,40 +216,31 @@
                   />
                 </div>
               </div>
-            </div>
-            <!-- Tiệc nhà gái -->
-            <div class="row invite-card-2">
-              <span class="line"> </span>
-              <div class="col-md-5 col-sm-12">
-                <div class="my-3">
-                  <img
-                    alt="Wedding Party"
-                    class="img-fluid"
-                    src="images/pic7.jpg"
-                    style="border-radius: 50%;"
-                    />
-                </div>
-              </div>
-              <div class="col-md-7 col-sm-12">
-                <div class="my-3">
-                  <div class="h4">Tiệc nhà gái</div>
+              <div class="col-md-7 col-8" data-aos="fade-right">
+                <div class="my-3 text-right">
+                  <h2>Tiệc nhà trai</h2>
                   <ul>
-                    <li>
-                      <i class="text-muted fas fa-map-marker-alt"></i>
-                      <span class="pl-2 text-muted"
-                        >Cho xin cái địa chỉ</span
-                      >
-                    </li>
-
                     <li class="pt-2">
                       <i class="text-muted far fa-calendar-alt"></i>
                       <span class="pl-2 text-muted"
-                        >2021. 09. 05. SUN 12:00 PM</span
+                        >10. 11. 2024. SUN 12:00 PM</span
+                      >
+                    </li>
+                    <li>
+                      <i class="text-muted fas fa-map-marker-alt"></i>
+                      <span class="pl-2 text-muted"
+                        >Bắc Ninh</span
+                      >
+                    </li>
+                    <li>
+                      <i class="text-muted fas fa-map-marker-alt"></i>
+                      <span class="pl-2 text-muted"
+                        >SĐT: 093312312312</span
                       >
                     </li>
                     <br />
                     <a
-                      href="https://www.google.com/maps/place/wild+pink/@40.8471026,-74.0003605,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f72ec67aa247:0x6d7af0abd2ca2794!8m2!3d40.8470986!4d-73.9981718"
+                      href="https://maps.app.goo.gl/j4P8xNsgazpnVhAF8?g_st=com.google.maps.preview.copy"
                     >
                       <img
                         alt="google-map"
@@ -283,6 +250,56 @@
                       />
                     </a>
                   </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Tiệc nhà gái -->
+            <div class="row invite-card-2 align-items-center">
+              <span class="line"> </span>
+              <div class="col-md-7 col-8" data-aos="fade-left">
+                <div class="my-3">
+                  <h2>Tiệc nhà gái</h2>
+                  <ul>
+                    <li class="pt-2">
+                      <i class="text-muted far fa-calendar-alt"></i>
+                      <span class="pl-2 text-muted"
+                        >10. 11. 2024. SUN 12:00 PM</span
+                      >
+                    </li>
+                    <li>
+                      <i class="text-muted fas fa-map-marker-alt"></i>
+                      <span class="pl-2 text-muted"
+                        >Vân Nội</span
+                      >
+                    </li>
+                    <li>
+                      <i class="text-muted fas fa-map-marker-alt"></i>
+                      <span class="pl-2 text-muted"
+                        >SĐT: 0930120312</span
+                      >
+                    </li>
+                    <br />
+                    <a
+                      href="https://maps.app.goo.gl/BM1tEd9nXkzYSukA8?g_st=com.google.maps.preview.copy"
+                    >
+                      <img
+                        alt="google-map"
+                        class="map-icon"
+                        id="google-map"
+                        src="images/map/google-map.png"
+                      />
+                    </a>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-4">
+                <div class="my-3">
+                  <img
+                    alt="Wedding Party"
+                    class="img-fluid"
+                    src="images/pic7.jpg"
+                    style="border-radius: 50%;"
+                    />
                 </div>
               </div>
             </div>
@@ -298,17 +315,17 @@
             <div class="container">
               <div class="col text-center mb-5" style="color: #000;">
                 <h4
-                  style="font-family: 'Noto Serif KR', serif"
+                  style="font-family: 'Cousine', serif"
                 >
-                  Hôn lễ được tổ chức vào hồi 14 giờ 00, THỨ HAI
+                  Lễ thành hôn được tổ chức vào hồi 16 giờ 00, THỨ HAI
                 </h4>
                 </br>
-                <h1 style="font-family: 'Noto Serif KR', serif">
+                <h1 style="font-family: 'Cousine', serif">
                   11.11.2024
                 </h1>
                 </br>
                 <h4
-                  style="font-family: 'Noto Serif KR', serif"
+                  style="font-family: 'Cousine', serif"
                 >
                   Tại tư gia nhà Trai
                 </h4>
@@ -338,6 +355,7 @@
                 <div class="card-columns">
                   <div
                     class="card"
+                    data-aos="flip-left"
                     data-groups='["wedding","ceremony","party"]'
                   >
                     <a data-gallery="ww-gallery" data-toggle="lightbox">
@@ -348,16 +366,7 @@
                       />
                     </a>
                   </div>
-                  <div class="card" data-groups='["party","wedding"]'>
-                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                      <img
-                        alt="Gallery Pic 4"
-                        class="img-fluid"
-                        src="images/gal/gal9.jpg"
-                      />
-                    </a>
-                  </div>
-                  <div class="card" data-groups='["party","wedding"]'>
+                  <div class="card" data-aos="flip-left" data-groups='["party","wedding"]'>
                     <a data-gallery="ww-gallery" data-toggle="lightbox">
                       <img
                         alt="Gallery Pic 4"
@@ -366,16 +375,7 @@
                       />
                     </a>
                   </div>
-                  <div class="card" data-groups='["party","wedding"]'>
-                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                      <img
-                        alt="Gallery Pic 5"
-                        class="img-fluid"
-                        src="images/gal/gal11.jpg"
-                      />
-                    </a>
-                  </div>
-                  <div class="card" data-groups='["party","wedding"]'>
+                  <div class="card" data-aos="flip-left" data-groups='["party","wedding"]'>
                     <a data-gallery="ww-gallery" data-toggle="lightbox">
                       <img
                         alt="Gallery Pic 2"
@@ -384,34 +384,7 @@
                       />
                     </a>
                   </div>
-                  <div class="card" data-groups='["party","wedding"]'>
-                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                      <img
-                        alt="Gallery Pic 2"
-                        class="img-fluid"
-                        src="images/gal/gal10.jpg"
-                      />
-                    </a>
-                  </div>
-                  <div class="card" data-groups='["party","wedding"]'>
-                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                      <img
-                        alt="Gallery Pic 7"
-                        class="img-fluid"
-                        src="images/gal/gal14.jpg"
-                      />
-                    </a>
-                  </div>
-                  <div class="card" data-groups='["party","wedding"]'>
-                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                      <img
-                        alt="Gallery Pic 2"
-                        class="img-fluid"
-                        src="images/gal/gal7.jpg"
-                      />
-                    </a>
-                  </div>
-                  <div class="card" data-groups='["party","wedding"]'>
+                  <div class="card" data-aos="flip-right" data-groups='["party","wedding"]'>
                     <a data-gallery="ww-gallery" data-toggle="lightbox">
                       <img
                         alt="Gallery Pic 3"
@@ -420,30 +393,21 @@
                       />
                     </a>
                   </div>
-                  <div class="card" data-groups='["party","wedding"]'>
+                  <div class="card" data-aos="flip-right" data-groups='["party","wedding"]'>
                     <a data-gallery="ww-gallery" data-toggle="lightbox">
                       <img
                         alt="Gallery Pic 2"
                         class="img-fluid"
-                        src="images/gal/gal6.jpg"
+                        src="images/gal/gal5.jpg"
                       />
                     </a>
                   </div>
-                  <div class="card" data-groups='["party","wedding"]'>
+                  <div class="card" data-aos="flip-right" data-groups='["party","wedding"]'>
                     <a data-gallery="ww-gallery" data-toggle="lightbox">
                       <img
                         alt="Gallery Pic 7"
                         class="img-fluid"
-                        src="images/gal/gal13.jpg"
-                      />
-                    </a>
-                  </div>
-                  <div class="card" data-groups='["party","wedding"]'>
-                    <a data-gallery="ww-gallery" data-toggle="lightbox">
-                      <img
-                        alt="Gallery Pic 2"
-                        class="img-fluid"
-                        src="images/gal/gal8.jpg"
+                        src="images/gal/gal6.jpg"
                       />
                     </a>
                   </div>
@@ -453,6 +417,30 @@
           </div>
         </div>
         <!-- Gifts -->
+        <div class="ww-section px-2" id="gift">
+          <div class="container ww-wedding-event">
+            <h2
+              class="h1 text-center pb-3 ww-title"
+              style="font-family: 'Noto Serif KR', serif"
+            >
+              Hộp mừng cưới
+            </h2>
+            <article class="cta" data-aos="zoom-in-up">
+              <img src='images/gift/gift.jpg' alt='Bluetit'>
+              <div class="cta__text-column">
+                <p style="font-family: 'Cousine', serif">Ngàn lời yêu thương gửi tới chú rể 🤵</p>
+              </div>
+            </article>
+            <br />
+            <article class="cta mt-1" data-aos="zoom-in-up">
+              <img src='images/gift/gift2.jpg' alt='Bluetit'>
+              <div class="cta__text-column">
+                <p style="font-family: 'Cousine', serif">Ngàn lời yêu thương gửi tới cô dâu 👰</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        
         <div
           class="ww-section parallax-window text-white"
           data-parallax="scroll"
@@ -462,30 +450,13 @@
           <div class="ww-gift-section last">
             <div class="container">
               <div class="col text-center mb-5">
-                <h6 style="font-family: 'Noto Serif KR', serif">
-                  Giống như chờ đợi một kỳ nghỉ hè đầy háo hức, chúng mình muốn bắt đầu chuyến hành trình cuộc đời cùng nhau.<br /><br />
+                <h6 style="font-family: 'Cousine', serif">
+                  Tựa như một chuyến hành trình đầy ắp ý nghĩa, chúng mình mong muốn bắt đầu chặng đường mới của cuộc đời cùng nhau.<br /><br />
 
                   Chúng mình rất mong được đón tiếp những người thân thương nhất đến chung vui trong ngày đầu tiên của hành trình này. Sự hiện diện và lời chúc phúc của mọi người sẽ là niềm hạnh phúc lớn lao đối với chúng mình.<br />
 
                   <br /><br />
                 </h6>
-                <h6
-                  class="h7 text-center pb-3 ww-title"
-                  style="font-family: 'Noto Serif KR', serif"
-                  >Gửi lời chúc cho tụi mình tại đây nhé ^^</h6
-                >
-                <h6 style="font-family: 'Noto Serif KR', serif">
-                  Ngân hàng: Vietcombank
-                </h6>
-                <h6 style="font-family: 'Noto Serif KR', serif">
-                  Chủ tài khoản: Nguyễn Thái Dương
-                </h6>
-                <h6 style="font-family: 'Noto Serif KR', serif">
-                  Số tài khoản: 1023224610
-                </h6>
-                <div>
-                  <img src="https://img.freepik.com/premium-vector/qr-code-cartoon-character-doing-wave-hand-gesture-cute-design_152558-13573.jpg" alt="QR" class="img-thumbnail" width="150">
-                </div>
               </div>
             </div>
           </div>
@@ -497,7 +468,7 @@
     <div id="audio-container">
       <!-- Audio element that automatically plays and loops the specified audio file -->
       <audio id="song" autoplay loop>
-        <source src="TaLaCuaNhau-DongNhiOngCaoThang.mp3" type="audio/mp3" />
+        <source src="Em Dong Y Duc Phuc 911.mp3" type="audio/mp3" />
       </audio>
 
       <!-- Wrapper for the audio icon, initially hidden (display: none) -->
@@ -526,6 +497,9 @@
     </div> -->
   </body>
   <script>
+    AOS.init({
+    duration: 1000
+  });
     // Select the root element, the audio icon wrapper, the icon inside the wrapper, and the audio element
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
